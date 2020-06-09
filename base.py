@@ -9,7 +9,7 @@ def read_data(teams_file,games_file,madness_teams_file):
     teams_2014 = pd.read_csv(teams_file,header=None)
     teams_2014.columns=["number","name"]
     games_2014 = pd.read_csv(games_file,header=None)
-    games_2014.columns = ["notsure1","date","team1","notsure2","points1","team2","notsure3","points2"]
+    games_2014.columns = ["notsure1","date","team1","H_A_N1","points1","team2","H_A_N2","points2"]
     team1_names = teams_2014.copy()
     team1_names.columns = ["team1","team1_name"]
     team1_names.set_index('team1',inplace=True)
