@@ -4,6 +4,11 @@ selectionSundayList = ['03/10/2002','03/16/2003','03/14/2004','03/13/2005','03/1
                        '03/15/2009','03/14/2010','03/13/2011','03/11/2012',
                        '03/17/2013','03/16/2014','03/15/2015','03/13/2016','03/12/2017','03/11/2018', '3/17/2019']
 
+from datetime import timedelta
+
+days_to_subtract=7
+d = timedelta(days=days_to_subtract)
+
 # Just a consistent way of processing files. Ignore the fact that the local variables say 2014
 def read_data(teams_file,games_file,madness_teams_file):
     teams_2014 = pd.read_csv(teams_file,header=None)
@@ -32,7 +37,7 @@ def read_data(teams_file,games_file,madness_teams_file):
     games_2014.loc[mask,"team2_madness"] = 1
     games_2014.reset_index()
     for selection_sunday in selectionSundayList:
-        games = games_2014.loc[games_2014["date"] < pd.to_datetime(selection_sunday,format="%m/%d/%Y")]
+        games = games_2014.loc[games_2014["date"] <= pd.to_datetime(selection_sunday,format="%m/%d/%Y")-d]
         if len(games) > 0:
             break
     return games

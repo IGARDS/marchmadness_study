@@ -57,7 +57,7 @@ Utah
 Utah_St
 VA_Commonwealth
 Villanova
-WKU
+W_Kentucky
 Wake_Forest
 Washington
 West_Virginia
