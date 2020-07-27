@@ -1,0 +1,18 @@
+,V_method,Parameters,Method,Year,# X* frac,k,# X* frac top 40,Upset measure
+0,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2002,166,1018.0000003210932,44,20.25
+1,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2003,388,920.500000006715,177,24.0
+2,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2004,252,950.5,67,21.0
+3,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2005,844,947.5000002669788,532,24.5
+4,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2006,862,957.0000000618717,456,25.0
+5,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2007,232,1073.500000081253,86,14.5
+6,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2008,364,1053.5000000028392,179,17.5
+7,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2009,244,1141.5000002043334,74,18.25
+8,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2010,774,1039.500001514964,488,27.25
+9,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2011,356,1326.0000000000514,137,25.0
+10,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2012,442,1117.2500000439927,290,23.25
+11,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2013,1428,1126.000000001882,961,25.25
+12,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2014,498,1267.0000000005239,210,24.0
+13,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2015,342,1232.000000081036,133,17.5
+14,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2016,1092,1261.2500000134366,692,26.25
+15,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2017,230,1133.50000000006,124,17.5
+16,direct_indirect_weighted,"direct_thres=2.000000,spread_thres=2.000000,weight_indirect=0.500000",lop,2018,472,1199.0000000008324,329,27.25
