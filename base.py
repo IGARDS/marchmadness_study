@@ -1,5 +1,15 @@
 import pandas as pd
 
+selectionSundays = {'2002':'03/10/2002','2003':'03/16/2003',
+                    '2004':'03/14/2004','2005':'03/13/2005',
+                    '2006':'03/12/2006','2007':'03/11/2007',
+                    '2008':'03/16/2008','2009':'03/15/2009',
+                    '2010':'03/14/2010','2011':'03/13/2011',
+                    '2012':'03/11/2012','2013':'03/17/2013',
+                    '2014':'03/16/2014','2015':'03/15/2015',
+                    '2016':'03/13/2016','2017':'03/12/2017',
+                    '2018':'03/11/2018','2019':'3/17/2019'}
+
 selectionSundayList = ['03/10/2002','03/16/2003','03/14/2004','03/13/2005','03/12/2006','03/11/2007','03/16/2008',
                        '03/15/2009','03/14/2010','03/13/2011','03/11/2012',
                        '03/17/2013','03/16/2014','03/15/2015','03/13/2016','03/12/2017','03/11/2018', '3/17/2019']
@@ -38,6 +48,9 @@ def read_data(teams_file,games_file,madness_teams_file):
     games_2014.reset_index()
     for selection_sunday in selectionSundayList:
         games = games_2014.loc[games_2014["date"] <= pd.to_datetime(selection_sunday,format="%m/%d/%Y")-d]
+        remaining_games = games_2014.loc[games_2014["date"] > pd.to_datetime(selection_sunday,format="%m/%d/%Y")-d] 
         if len(games) > 0:
             break
-    return games
+    games = games.sort_values(by='date')
+    remaining_games.sort_values(by='date')
+    return games,remaining_games
